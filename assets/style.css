@@ -1,0 +1,274 @@
+@import url('https://font.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Oswald:wght@600&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Oswald:wght@600&family=Rancho&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Oswald:wght@600&family=Rancho&family=Redressed&family=Ubuntu&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active{
+    background-color: #094b65;
+    color: #fff;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #041121, transparent);
+    z-index: 12;
+}
+section #text{
+    position:absolute;
+    color: #ffffff;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 0.80em;
+    font-family: 'Exo 2', sans-serif;
+    transform: translateY(-150px);
+    z-index: 2
+   
+}
+section #text span{
+    font-size: 0.20em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section #text span.innerText{
+    font-size: 2.5vw;    
+    font-family: 'Exo 2', sans-serif;
+    
+    
+}
+#btn
+{
+    
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: rgb(0, 195, 255);
+    color: #094b65;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+  
+}
+.sec{
+    position: relative;
+    min-height: 100vh;
+    padding: 30px;
+    background: #041121;
+    color: #fff;
+    z-index: 10;
+}
+.sec h3{
+
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.sec img{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+.sec p.moveme{
+    font-size: 3vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: auto;
+    padding: 100px
+    
+
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img.bg1{
+    z-index: 11;
+}
+section img.bg2{
+    z-index: 1;
+}
+
+
+.thirdSec{
+    position: relative;
+    min-height: 100vh;
+    padding: 30px;
+    margin: auto;
+    background: #091a2e;
+    color: #fff;
+}
+.thirdSec h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.thirdSec img{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    pointer-events: none;
+    transform: translateX(-10px);
+    
+   
+}
+.thirdSec .webinarText{
+    padding: 150px;
+    font-size: 4vw;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    right: auto;
+    left: 0;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+   
+}
+
+
+.fifthSec{
+    position: relative;
+    min-height: 100vh;
+    padding: 30px;
+    margin: auto;
+    background: #091a2e;
+    color: #fff;
+    z-index: 4;
+}
+.last{
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Oswald', sans-serif;
+    padding: 50px;
+    z-index: 5;
+    opacity: 0;
+    position: relative;
+    transition: all 0.8s ease-out;
+    bottom: -40px;
+    
+}
+.show{
+    opacity: 1;
+    bottom: 0;
+}
+
+ul.myLinks{
+    font-size: 2vw;
+    color: #fff;
+    z-index: 10000;
+}
+
+.fourthSec{
+    position: relative;
+    min-height: 100vh;
+    padding: 30px;
+    margin: auto;
+    background: #041121;
+    color: #fff;
+  
+}
+.fourthSec h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.fourth{
+    font-size: 3vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    padding: 100px;
+}
+
+.fourthSec img{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+ 
+    
+}
